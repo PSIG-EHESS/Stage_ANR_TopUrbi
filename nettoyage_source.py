@@ -21,7 +21,7 @@ for root, dirs, files in os.walk(sys.argv[1]):
 				context_line = True
 				#imprimer page précedente
 				print("P:"+' '.join(str1).replace("  ", " ").replace("- ", ""))
-				file_out.write(' '.join(str1).replace("  ", " ").replace("- ", ""))
+				file_out.write(' '.join(str1).replace("  ", " ").replace("- ", "").replace(" ,", ","))
 				file_out.write("\n")
 				str1 = []
 				if line.startswith("##"):
